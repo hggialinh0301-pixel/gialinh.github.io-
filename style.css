@@ -90,6 +90,38 @@ header h1 {
     font-size: 1.1em;
 }
 
+.resume-container {
+    text-align: center;
+    margin: 30px;
+}
+
+.resume-image {
+    max-width: 100%;
+    height: auto;
+    border-raidus: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.resume-image: hover {
+    transform: scale(1.02);
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background: #205997;
+    color: #1a436e;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+    background: #2c3e50;
+}
+
  header p{
     font-size: 1.2em;
     opacity: 0.95;
@@ -103,7 +135,6 @@ header hr {
 }  
 
 
-/* heading */
 h2 {
     color: var(--priamry-color);
     margin-bottom: 20px;
@@ -174,7 +205,6 @@ a:hover::after {
     width:100%;
 }
  
-/* contact section */
  section p {
     margin: 15px 0;
     padding: 10px;
@@ -189,7 +219,7 @@ section p:hover {
     border-color: var(--secondary-color);
 }
 
-/* resume section */
+
 section:last-of-type p {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     text-align: center;
@@ -209,7 +239,7 @@ section:last-of-type a:hover {
     transform: scale(1.05);
 }
 
-/* footer */
+
 footer {
     text-align: center;
     background: linear-gradient(135deg, var(--primary-color), var(--primary-color));
@@ -228,7 +258,7 @@ footer p {
     opacity: 0.9;
 }
 
-/* responsive Design */
+
 @media (max-width: 768px) {
     body {
         padding: 10px;
@@ -263,7 +293,7 @@ footer p {
     }
 }
 
-/* Animation */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -279,7 +309,7 @@ body > * {
     animation: fadeIn 0.8s ease-out;
 }
 
-/* Custom scrollbar */
+
 ::-webkit-scrollbar {
     width: 10px;
 }
